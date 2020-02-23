@@ -2,18 +2,17 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Car from "../components/car"
+import Driver from "../components/driver"
 
-class Cars extends React.Component {
-
+class Drivers extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO title="Cars" />
-        <Car />
+        <SEO title="Home" />
+        <Driver />
       </Layout>
     )
   }
 }
 
-export default Cars
+export default Drivers

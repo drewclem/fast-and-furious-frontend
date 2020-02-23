@@ -24,7 +24,7 @@ class Driver extends React.Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:3000/drivers').then(response => {
+    fetch('https://fast-and-furious-data.herokuapp.com/drivers').then(response => {
       return response.json()
     }).then(json => {
       this.setState({
@@ -51,7 +51,7 @@ class Driver extends React.Component {
             <button className="float-right text-2xl mr-4" onClick={this.updateDriver}>GO!</button>
           </div>
           <div className="sm:pl-12 sm:w-1/2">
-            <h2 className="font-bold text-5xl tracking-wide">{driver.name}</h2>
+            <h2 className="font-bold text-4xl sm:text-5xl sm:tracking-wide">{driver.name}</h2>
             <p className="text-xl mb-4 opacity-50">{driver.alias}</p>
             <p>Memorable quotes:</p>
             <ul className="text-md opacity-50 leading-relaxed">{driver.quotes.map(quotes =>

@@ -27,7 +27,7 @@ class Car extends React.Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:3000/cars').then(response => {
+    fetch('https://fast-and-furious-data.herokuapp.com/cars').then(response => {
       return response.json()
     }).then(json => {
       this.setState({
@@ -49,8 +49,8 @@ class Car extends React.Component {
     return (
       <div>
         <div key={car.id} className="sm:flex pb-12">
-          <div className="sm:w-1/2">
-            <img src={car.image} alt="car" className="w-full mb-4" />
+          <div className="sm:w-1/2 pb-10">
+            <img src={car.image} alt="car" className="w-full mb-4 shadow-md" />
             <button className="float-right text-2xl mr-4" onClick={this.updateCar}>GO!</button>
           </div>
           <div className="sm:pl-12 sm:w-1/2">
