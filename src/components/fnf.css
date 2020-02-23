@@ -1,0 +1,54 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url('https://fonts.googleapis.com/css?family=Kanit:400i,500i,900i&display=swap');
+
+body {
+  background-image: url(../images/TREADS-GRAY\ 1.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: 35%;
+}
+
+
+html {
+  font-family: 'Kanit', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900i
+}
+
+.active {
+  opacity: 100;
+  font-weight: 500i;
+  text-shadow: 2px 2px 5px chartreuse;
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition: 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+
+/*--------Dark Mode---------*/
+.dark{
+  background-color: rgb(20, 20, 20);
+  height: 100vh;
+  color: white;
+  background-image: url(../images/TREADS-GRAY\ 1.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: 35%;
+  background-blend-mode: soft-light;
+}
+
+.dark div main div div div img {
+  box-shadow: 5px 5px 25px rgba(128, 255, 0, 0.555);
+  border: 1px solid rgb(179, 255, 57)
+}
+
+.dark div main div div div h2 {
+  text-shadow: 5px 5px 25px rgba(128, 255, 0, 0.555);
+  -webkit-text-stroke: 1px solid rgb(179, 255, 57);
+  color: chartreuse
+}
