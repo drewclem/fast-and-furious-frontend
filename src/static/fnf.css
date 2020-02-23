@@ -1,7 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import url('https://fonts.googleapis.com/css?family=Kanit:400i,500,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kanit:400i,500i,900i&display=swap');
 
 body {
   background-image: url(../images/TREADS-GRAY\ 1.png);
@@ -16,16 +16,16 @@ body div div {
 
 
 html {
-  font-family: 'Kanit', Arial, Helvetica, sans-serif;
+  font-family: 'Kanit', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 900i
+  font-weight: 900
 }
 
 .active {
   opacity: 100;
-  font-weight: 500i;
+  font-weight: 500;
   text-shadow: 2px 2px 5px chartreuse;
 }
 
