@@ -1,7 +1,6 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import url('https://fonts.googleapis.com/css?family=Kanit:400i,500i,900i&display=swap');
 
 body {
   background-image: url(../images/TREADS-GRAY\ 1.png);
@@ -16,7 +15,7 @@ body div div {
 
 
 html {
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Kanit';
 }
 
 h1, h2, h3, h4, h5, h6 {
